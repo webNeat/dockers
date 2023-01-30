@@ -1,12 +1,12 @@
 {
-  "name": "dockerenv",
+  "name": "dockers",
   "version": "1.0.0-alpha.0",
   "author": "Amine Ben hammou",
   "license": "MIT",
   "source": "src/cli.ts",
   "main": "dist/cli.js",
   "bin": {
-    "dockerenv": "dist/cli.js"
+    "dockers": "dist/cli.js"
   },
   "files": [
     "bin"
