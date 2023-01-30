@@ -1,0 +1,28 @@
+{
+  "name": "dockerenv",
+  "version": "1.0.0-alpha.0",
+  "author": "Amine Ben hammou",
+  "license": "MIT",
+  "source": "src/cli.ts",
+  "main": "dist/cli.js",
+  "bin": {
+    "dockerenv": "dist/cli.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "build": "parcel build",
+    "test": "echo 'Nothing yet!'",
+    "test-coverage": "echo 'Nothing yet!'"
+  },
+  "dependencies": {
+    "zx": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "parcel": "^2.8.3",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.4"
+  }
+}
