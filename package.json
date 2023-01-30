@@ -1,6 +1,6 @@
 {
   "name": "dockers",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "author": "Amine Ben hammou",
   "license": "MIT",
   "source": "src/cli.ts",
@@ -12,7 +12,9 @@
     "bin"
   ],
   "scripts": {
+    "prebuild": "rm -rf dist",
     "build": "parcel build",
+    "postbuild": "echo '#!/usr/bin/env node' | cat - dist/cli.js > temp.js && mv temp.js dist/cli.js && chmod +x dist/cli.js",
     "test": "echo 'Nothing yet!'",
     "test-coverage": "echo 'Nothing yet!'"
   },
